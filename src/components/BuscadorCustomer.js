@@ -9,7 +9,8 @@ export default class BuscadorCustomer extends Component {
     customer: null,
   };
 
-  buscarCustomer = () => {
+  buscarCustomer = (e) => {
+    e.preventDefault();
     //recuperamos el valor de la caja
     let idCustomer = this.cajaId.current.value;
     let request = "customers/" + idCustomer + ".json";
@@ -29,8 +30,16 @@ export default class BuscadorCustomer extends Component {
           <label>ID customer: </label>
           <input type="text" ref={this.cajaId}></input>
           <br />
-          <button>Buscar customer</button>
+          <button onClick={this.buscarCustomer}>Buscar customer</button>
         </form>
+        {this.state.customer && (
+          <ul>
+            <li>Cliente: {this.state.customer.contactName}</li>
+            <li>Empresa: {this.state.customer.companyName}</li>
+            <li>Puesto: {this.state.customer.contactTitle}</li>
+            <li>Ciudad: {this.state.customer.city}</li>
+          </ul>
+        )}
       </div>
     );
   }
