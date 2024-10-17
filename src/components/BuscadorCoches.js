@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Global from "../Global";
+
 export default class BuscadorCoches extends Component {
   cajaMarca = React.createRef();
+
+  //TODOS LOS COCHES AL LEER DEL SERVICIO
+  cochesAll = [];
+
+  state = {
+    cochesDibujo: [],
+  };
+
   buscarCoches = (e) => {
     e.preventDefault();
     let marca = this.cajaMarca.current.value;
@@ -24,17 +33,16 @@ export default class BuscadorCoches extends Component {
       cochesDibujo: cochesFiltrados,
     });
   };
-  //TODOS LOS COCHES AL LEER DEL SERVICIO
-  cochesAll = [];
-  state = {
-    cochesDibujo: [],
-  };
+
+  
   reloadDibujo = (e) => {
     e.preventDefault();
     this.setState({
       cochesDibujo: this.cochesAll,
     });
   };
+
+
   loadCoches = () => {
     var request = "/webresources/coches";
     var url = Global.urlApiCoches + request;
@@ -45,9 +53,13 @@ export default class BuscadorCoches extends Component {
       });
     });
   };
+
+
   componentDidMount = () => {
     this.loadCoches();
   };
+
+  
   render() {
     return (
       <div>

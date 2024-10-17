@@ -14,6 +14,12 @@ export default class MenuRutas extends Component {
           <li>
             <a href="/buscadorcoches"> Buscador Coches</a>
           </li>
+          <li>
+            <a href="/departamentosempleados"> Departamentos empleados</a>
+          </li>
+          <li>
+            <a href="/empleadosoficios"> Empleados oficios</a>
+          </li>
         </ul>
       </div>
     );
