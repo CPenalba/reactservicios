@@ -4,12 +4,15 @@ export default class MenuRutas extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>
+        <ul id="menurutas">
+          {/* <li>
             <a href="/"> Tabla hospitales</a>
           </li>
           <li>
             <a href="/insertarhospital"> Insertar hospital</a>
+          </li>
+          <li>
+            <a href="/eliminarhospital"> Eliminar hospital</a>
           </li>
           <li>
             <a href="/buscadorcoches"> Buscador Coches</a>
@@ -19,6 +22,24 @@ export default class MenuRutas extends Component {
           </li>
           <li>
             <a href="/empleadosoficios"> Empleados oficios</a>
+          </li>
+          <li>
+            <a href="/departamentos"> Departamentos</a>
+          </li> */}
+          <li>
+            <a href="/"> Home</a>
+          </li>
+          <li>
+            <a href="/tablamultiplicar/21"> Tabla multiplicar 21</a>
+          </li>
+          <li>
+            <a href="/tablamultiplicar/50"> Tabla multiplicar 50</a>
+          </li>
+          <li>
+            <a href="/tablamultiplicar/14"> Tabla multiplicar 14</a>
+          </li>
+          <li>
+            <a href="/noexiste"> Sin ruta</a>
           </li>
         </ul>
       </div>
