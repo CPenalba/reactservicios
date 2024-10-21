@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class MenuRutas extends Component {
   render() {
@@ -6,40 +7,40 @@ export default class MenuRutas extends Component {
       <div>
         <ul id="menurutas">
           <li>
-            <a href="/"> Tabla hospitales</a>
+            <NavLink to="/"> Tabla hospitales</NavLink>
           </li>
           <li>
-            <a href="/insertarhospital"> Insertar hospital</a>
+            <NavLink to="/insertarhospital"> Insertar hospital</NavLink>
           </li>
           <li>
-            <a href="/eliminarhospital"> Eliminar hospital</a>
+            <NavLink to="/eliminarhospital"> Eliminar hospital</NavLink>
           </li>
           <li>
-            <a href="/buscadorcoches"> Buscador Coches</a>
+            <NavLink to="/buscadorcoches"> Buscador Coches</NavLink>
           </li>
           <li>
-            <a href="/departamentosempleados"> Departamentos empleados</a>
+            <NavLink to="/departamentosempleados">Departamentos empleados</NavLink>
           </li>
           <li>
-            <a href="/empleadosoficios"> Empleados oficios</a>
+            <NavLink to="/empleadosoficios"> Empleados oficios</NavLink>
           </li>
           <li>
-            <a href="/departamentos"> Departamentos</a>
+            <NavLink to="/departamentos"> Departamentos</NavLink>
           </li>
           <li>
-            <a href="/home"> Home</a>
+            <NavLink to="/home"> Home</NavLink>
           </li>
           <li>
-            <a href="/tablamultiplicar/21"> Tabla multiplicar 21</a>
+            <NavLink to="/tablamultiplicar/21"> Tabla multiplicar 21</NavLink>
           </li>
           <li>
-            <a href="/tablamultiplicar/50"> Tabla multiplicar 50</a>
+            <NavLink to="/tablamultiplicar/50"> Tabla multiplicar 50</NavLink>
           </li>
           <li>
-            <a href="/tablamultiplicar/14"> Tabla multiplicar 14</a>
+            <NavLink to="/tablamultiplicar/14"> Tabla multiplicar 14</NavLink>
           </li>
           <li>
-            <a href="/noexiste"> Sin ruta</a>
+            <NavLink to="/noexiste"> Sin ruta</NavLink>
           </li>
         </ul>
       </div>

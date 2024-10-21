@@ -21,8 +21,8 @@ root.render(
     {/* <ServicioCustomers /> */}
     {/* <InsertarHospital />
     <TablaHospitales /> */}
-    <MenuRutas />
-    <br />
+    {/* <MenuRutas />
+    <br /> */}
     <Router />
     {/* // <BuscadorCustomer /> */}
   </React.StrictMode>

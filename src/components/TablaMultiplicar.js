@@ -17,7 +17,12 @@ export default class TablaMultiplicar extends Component {
     });
   };
 
-  //al cargar el component
+  componentDidUpdate = (valorAntiguo) => {
+    if (valorAntiguo.numero != this.props.numero) {
+      this.generarTablaMultiplicar();
+    }
+  };
+
   componentDidMount = () => {
     this.generarTablaMultiplicar();
   };
