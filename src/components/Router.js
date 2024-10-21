@@ -25,14 +25,14 @@ export default class Router extends Component {
     return (
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<TablaHospitales />} />
+          <Route path="/" element={<TablaHospitales />} />
           <Route path="/insertarhospital" element={<InsertarHospital />} />
           <Route path="/eliminarhospital" element={<EliminarHospital />} />
           <Route path="/buscadorcoches" element={<BuscadorCoches />} />
           <Route path="/departamentosempleados" element={<DepartamentosEmpleados />} />
           <Route path="/empleadosoficios" element={<EmpleadosOficios />} />
-          <Route path="/departamentos" element={<Departamentos />} /> */}
-          <Route path="/" element={<Home />} />
+          <Route path="/departamentos" element={<Departamentos />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/tablamultiplicar/:minumero" element={<TablaMultiplicarElement/>} />
           {/* para las rutas que no existen debemos utilizar un asterisco dentro del path y debe ser la ultima etiqueta de <routes></routes> */}
           <Route path="*" element={<NotFound />} />

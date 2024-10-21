@@ -5,7 +5,7 @@ export default class MenuRutas extends Component {
     return (
       <div>
         <ul id="menurutas">
-          {/* <li>
+          <li>
             <a href="/"> Tabla hospitales</a>
           </li>
           <li>
@@ -25,9 +25,9 @@ export default class MenuRutas extends Component {
           </li>
           <li>
             <a href="/departamentos"> Departamentos</a>
-          </li> */}
+          </li>
           <li>
-            <a href="/"> Home</a>
+            <a href="/home"> Home</a>
           </li>
           <li>
             <a href="/tablamultiplicar/21"> Tabla multiplicar 21</a>

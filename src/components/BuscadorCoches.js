@@ -34,14 +34,12 @@ export default class BuscadorCoches extends Component {
     });
   };
 
-  
   reloadDibujo = (e) => {
     e.preventDefault();
     this.setState({
       cochesDibujo: this.cochesAll,
     });
   };
-
 
   loadCoches = () => {
     var request = "/webresources/coches";
@@ -54,12 +52,10 @@ export default class BuscadorCoches extends Component {
     });
   };
 
-
   componentDidMount = () => {
     this.loadCoches();
   };
 
-  
   render() {
     return (
       <div>
@@ -70,7 +66,7 @@ export default class BuscadorCoches extends Component {
           <button onClick={this.buscarCoches}>Buscar coches</button>
           <button onClick={this.reloadDibujo}>Recargar coches</button>
         </form>
-        <table border="1">
+        <table border="1" className="table table-dark">
           <thead>
             <tr>
               <th>Coche</th>
