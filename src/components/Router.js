@@ -13,6 +13,7 @@ import NotFound from "./NotFound";
 
 import { useParams } from "react-router-dom";
 import MenuRutas from "./MenuRutas";
+import HospitalesMultiple from "./HospitalesMultiple";
 
 export default class Router extends Component {
   render() {
@@ -42,6 +43,7 @@ export default class Router extends Component {
             path="/tablamultiplicar/:minumero"
             element={<TablaMultiplicarElement />}
           />
+          <Route path="/hospitalesmultiple" element={<HospitalesMultiple />} />
           {/* para las rutas que no existen debemos utilizar un asterisco dentro del path y debe ser la ultima etiqueta de <routes></routes> */}
           <Route path="*" element={<NotFound />} />
         </Routes>

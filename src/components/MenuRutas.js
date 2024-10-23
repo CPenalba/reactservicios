@@ -9,7 +9,7 @@ export default class MenuRutas extends Component {
           <li>
             <NavLink to="/"> Tabla hospitales</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/insertarhospital"> Insertar hospital</NavLink>
           </li>
           <li>
@@ -38,6 +38,9 @@ export default class MenuRutas extends Component {
           </li>
           <li>
             <NavLink to="/tablamultiplicar/14"> Tabla multiplicar 14</NavLink>
+          </li> */}
+          <li>
+            <NavLink to="/hospitalesmultiple"> Hospitales multiple</NavLink>
           </li>
           <li>
             <NavLink to="/noexiste"> Sin ruta</NavLink>
